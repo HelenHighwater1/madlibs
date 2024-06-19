@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlib</title>
+</head>
+<body>
+
+<h1>Here is your madlib!</h1>
+
+<p>
+  There once was a {{ color }} {{ noun }}, who was a 
+  {% if hobbies|length == 1 %}
+    {{ hobbies }}
+  {% elif hobbies|length > 1 %}
+      {% for hobby in hobbies %}
+        {{ hobby }} and
+      {% endfor %}
+  {% endif %}
+  sitting in the Hackbright Lab.
+  When {{ person }} went to pick it up, it burst into flames in a totally
+  {{ adjective }} way.
+</p>
+</body>
+</html>
+
+
